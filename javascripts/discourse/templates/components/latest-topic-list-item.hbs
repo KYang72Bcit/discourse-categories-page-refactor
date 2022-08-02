@@ -3,56 +3,22 @@
   <a href="{{topic.firstPostUrl}}" data-user-card="{{topic.creator.username}}">{{avatar topic.creator
     imageSize="large"}}</a>
 </div>
-<div class='main-link clearfix topic-list-data'>
-  <div class='category'>
-    {{category-link topic.category format="large"}}
+<div class="main-link">
+  <div class="top-row">
+    {{raw "topic-status" topic=topic}}
+    {{topic-link topic}}
+    {{~#if topic.featured_link}}
+      {{topic-featured-link topic}}
+    {{/if}}
+    {{~topic-post-badges unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl}}
   </div>
-  {{~raw-plugin-outlet name="topic-list-before-status"}}
-  {{raw "topic-status" topic=topic}}
-  {{~topic-link topic class="raw-link raw-topic-link"}}
-
-  {{discourse-tags topic mode="list" tagsForUser=tagsForUser}}
-  {{#if expandPinned}}
-  {{raw "list/topic-excerpt" topic=topic}}
-
-  {{/if}}
-  <div class='post details grid'>
-    <div class="creator"> <span>By</span>
-      <a href="/users/{{topic.creator.username}}" data-auto-route="true"
-        data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
-      </a>
-     
-     
-    </div>
-
-    <div class="createTime">
-       <a href={{topic.url}}> {{d-icon "calendar-alt"}}{{format-date topic.createdAt}}</a>
-    </div>
-    
-
-   
-    <div class="like view reply">
-      <div class="num likes topic-list-data">
-
-        <a href='{{topic.summaryUrl}}'>
-          {{d-icon "far-thumbs-up"}} {{number topic.like_count}}
-        </a>
-
-      </div>
-      <div class="num views {{topic.viewsHeat}} topic-list-data">
-        {{raw-plugin-outlet name="topic-list-before-view-count"}}
-       {{d-icon "far-eye"}} {{number topic.views numberKey="views_long"}} 
-      </div>
-     
-
-      {{raw "list/posts-count-column" topic=topic}}
-
-    </div>
-
-    {{!-- <div class="num views {{topic.viewsHeat}} topic-list-data">
-      {{raw-plugin-outlet name="topic-list-before-view-count"}}
-      {{number topic.views numberKey="views_long"}} {{d-icon "far-eye"}}
-    </div> --}}
+  <div class="bottom-row">
+    {{category-link topic.category}}{{discourse-tags topic mode="list"}}{{! intentionally inline to avoid whitespace}}
   </div>
-
+</div>
+<div class="topic-stats">
+  {{raw "list/posts-count-column" topic=topic tagName="div"}}
+  <div class="topic-last-activity">
+    <a href={{topic.lastPostUrl}} title={{topic.bumpedAtTitle}}>{{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
+  </div>
 </div>
