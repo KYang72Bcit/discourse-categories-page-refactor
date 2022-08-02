@@ -8,9 +8,7 @@
 
 <div class='main-link'>
   <div class='category'>
-    {{!-- {{category-link topic.category format="large"}} --}}
-     {{topic.category.name}}
-  
+    {{category-link topic.category format="large"}}
   </div>
   {{~raw-plugin-outlet name="topic-list-before-status"}}
   {{raw "topic-status" topic=topic}}

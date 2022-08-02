@@ -3,43 +3,39 @@
   <a href="{{topic.firstPostUrl}}" data-user-card="{{topic.creator.username}}">{{avatar topic.creator
     imageSize="large"}}</a>
 </div>
-<div class="main-post">
-  <div class="top-row">
-    {{category-link topic.category}}
-  
-    {{raw "topic-status" topic=topic}}
-    {{topic-link topic}} 
+<div class='main-link'>
+  <div class='category'>
+    {{category-link topic.category format="large"}}
   </div>
-
+  {{raw "topic-status" topic=topic}}
+  {{topic-link topic}}
   {{raw "list/topic-excerpt" topic=topic}}
-</div>
-
- {{!-- <div class="creator"> <span>By</span>
-      <a href="/users/{{topic.creator.username}}" data-auto-route="true"
-        data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
-      </a>
-    </div> --}}
-
+  <div class='post details grid'>
     <div class="creator"> <span>By</span>
-      <a href="/users/{{topic.creator.username}}" 
+      <a href="/users/{{topic.creator.username}}"
         data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
       </a>
     </div>
-
- <div class="topic-last-activity">
+     <div class="createTime">
     <a href={{topic.lastPostUrl}} title={{topic.bumpedAtTitle}}>{{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
-  </div>
-
- <div class="like view reply">
+    </div>
+   <div class="like view reply">
       <div class="num likes topic-list-data">
           {{d-icon "far-thumbs-up"}} {{number topic.like_count}}
       </div>
 
       <div class="num views {{topic.viewsHeat}} topic-list-data">
-       {{d-icon "far-eye"}} {{number topic.views numberKey="views_long"}} 
+       {{d-icon "far-eye"}} {{number topic.views numberKey="views_long"}}
       </div>
-     
+
 
       {{raw "list/posts-count-column" topic=topic}}
 
     </div>
+
+
+  </div>
+</div>
+
+
+
