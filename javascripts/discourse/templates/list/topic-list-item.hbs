@@ -6,10 +6,11 @@
 {{~raw-plugin-outlet name="topic-list-before-columns"}}
 
 
-<div class='main-link clearfix topic-list-data'>
+<div class='main-link'>
   <div class='category'>
     {{!-- {{category-link topic.category format="large"}} --}}
-    {{topic.category.name}}
+     {{topic.category.name}}
+  
   </div>
   {{~raw-plugin-outlet name="topic-list-before-status"}}
   {{raw "topic-status" topic=topic}}
