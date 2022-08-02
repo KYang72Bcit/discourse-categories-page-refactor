@@ -9,6 +9,9 @@
   </div>
   {{raw "topic-status" topic=topic}}
   {{topic-link topic}}
+  {{~#if this.topic.featured_link}}
+      {{topic-featured-link this.topic}}
+    {{/if}}
   {{raw "list/topic-excerpt" topic=topic}}
   <div class='post details grid'>
     <div class="creator"> <span>By</span>
