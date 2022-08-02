@@ -1,0 +1,4 @@
+svg_icons:
+  default: 'calendar-alt'
+  type: 'list'
+  list_type: 'compact'

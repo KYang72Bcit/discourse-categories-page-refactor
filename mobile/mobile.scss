@@ -1,0 +1,80 @@
+.topic-list-body{position:relative !important;}
+.status-solved {
+    position: relative;
+    .d-icon-far-check-square {
+      display: none !important;
+    }
+    div.poster-avatar {
+      display: flex;
+      align-items: center;
+    }
+    div.poster-avatar::after{
+      content: "\2713 \00a0 Solved";
+    color: var(--blend-primary-secondary-5);
+    font-size: var(--font-down-1);
+    font-weight: 700;
+    background-color: var(--tertiary);
+    border-radius: 5%;
+    width: 65px;
+    padding: 3px 6px;
+    height: 18px;
+    right: 25px;
+    vertical-align: top;
+    // margin-top: 0.5rem; 
+    margin-left: auto; 
+    }
+  
+  }
+  
+
+.createTime{
+  font-size: var(--font-down-1) !important;
+}
+.creator{
+  font-size: var(--font-down-1) !important;
+}
+.topic-excerpt {
+  width: 96% !important;
+  
+}
+  
+div.main-link > div.grid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    align-items:center !important;
+    .createTime > a {
+        color: var(--primary-medium) !important;
+        text-align: center !important;
+       
+    
+      }
+      .d-icon {
+        color: var(--tertiary) !important;
+      }
+    div.like {
+    font-size: var(--font-down-1) !important;
+    font-weight: 500 !important;
+     grid-row-start: 2; 
+     grid-column: 1/-1;
+     display: grid;
+     grid-template-columns: repeat(3, 33.3%);
+     align-items: center;
+     .likes {
+      grid-column-start: 1;
+
+     }
+     .views {
+      grid-column-start: 2;
+     }
+     .posts {
+      grid-column-start: 3;
+      font-size: var(--font-down-1) !important;
+      font-weight: 500 !important;
+      
+     }
+   
+    }
+    
+  }
+  
