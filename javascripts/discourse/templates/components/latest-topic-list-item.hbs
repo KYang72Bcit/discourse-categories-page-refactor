@@ -7,14 +7,11 @@
   <div class="top-row">
     {{raw "topic-status" topic=topic}}
     {{topic-link topic}}
-    {{~#if topic.featured_link}}
-      {{topic-featured-link topic}}
-    {{/if}}
-    {{~topic-post-badges unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl}}
+   
   </div>
-  <div class='category'>
+  {{!-- <div class='category'>
     {{category-link topic.category format="large"}}
-  </div>
+  </div> --}}
   {{raw "list/topic-excerpt" topic=topic}}
 </div>
 
