@@ -66,14 +66,14 @@
     width: 95%;
     grid-template-columns: 10% 90%;
     margin-left: 4%;
+    &:hover{
+        outline: 1.5px solid var(--tertiary);
+        // border: 1.5px solid var(--tertiary);
+         box-shadow: 0px 0px 5px #ebedef;
+    }
   }
   
-  div.latest-topic-list-item {
-    outline: 1.5px solid var(--tertiary);
-      // border: 1.5px solid var(--tertiary);
-       box-shadow: 0px 0px 5px #ebedef;
-    
-  }
+ 
   .poster-avatar {
     justify-self: center;
     padding-top: 20px;
@@ -90,11 +90,11 @@
     font-size: 18px;
   }
   
-  .topic-list .topic-list-data a.title:not(.badge-notification):hover {
+  .latest-topic-list-item a.title:not(.badge-notification):hover {
     text-decoration: underline;
   }
   
-  .topic-list .creator
+  .latest-topic-list-item .creator
    {
     font-size: var(--font-0-rem);;
     display: block;
