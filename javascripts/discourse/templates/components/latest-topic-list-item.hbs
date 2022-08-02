@@ -12,16 +12,21 @@
     {{/if}}
     {{~topic-post-badges unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl}}
   </div>
-  <div class="bottom-row">
-    {{category-link topic.category}}{{discourse-tags topic mode="list"}}{{! intentionally inline to avoid whitespace}}
+  <div class='category'>
+    {{category-link topic.category format="large"}}
   </div>
+  {{raw "list/topic-excerpt" topic=topic}}
 </div>
+
+ <div class="topic-last-activity">
+    <a href={{topic.lastPostUrl}} title={{topic.bumpedAtTitle}}>{{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
+  </div>
 
  <div class="like view reply">
       <div class="num likes topic-list-data">
           {{d-icon "far-thumbs-up"}} {{number topic.like_count}}
       </div>
-      
+
       <div class="num views {{topic.viewsHeat}} topic-list-data">
        {{d-icon "far-eye"}} {{number topic.views numberKey="views_long"}} 
       </div>
