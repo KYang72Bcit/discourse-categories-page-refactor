@@ -21,6 +21,10 @@
 //     right: 10px;
 //     top: 15px;
 //   }
+
+.latest-topic-list-item .main-link {
+    flex: 0 1 auto;
+    max-width: 95% !important;}
   
   div.main-link > div.grid {
     display: grid;
