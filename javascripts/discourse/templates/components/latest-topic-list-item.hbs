@@ -14,6 +14,18 @@
   {{raw "list/topic-excerpt" topic=topic}}
 </div>
 
+ {{!-- <div class="creator"> <span>By</span>
+      <a href="/users/{{topic.creator.username}}" data-auto-route="true"
+        data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
+      </a>
+    </div> --}}
+
+    <div class="creator"> <span>By</span>
+      <a href="/users/{{topic.creator.username}}" 
+        data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
+      </a>
+    </div>
+
  <div class="topic-last-activity">
     <a href={{topic.lastPostUrl}} title={{topic.bumpedAtTitle}}>{{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
   </div>
@@ -31,9 +43,3 @@
       {{raw "list/posts-count-column" topic=topic}}
 
     </div>
-{{!-- <div class="topic-stats">
-  {{raw "list/posts-count-column" topic=topic tagName="div"}}
-  <div class="topic-last-activity">
-    <a href={{topic.lastPostUrl}} title={{topic.bumpedAtTitle}}>{{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
-  </div>
-</div> --}}
