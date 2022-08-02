@@ -53,9 +53,10 @@
       font-weight: 700 !important;
       font-size: var(--font-up-1) !important;
       color: var(--header_primary) !important;
+      display: block;
     }
   }
-  tr.topic-list-item {
+  div.latest-topic-list-item {
    
     display: grid !important;
     width: 95%;
@@ -63,7 +64,7 @@
     margin-left: 4%;
   }
   
-  .topic-list-item:hover {
+  div.latest-topic-list-item {
     outline: 1.5px solid var(--tertiary);
       // border: 1.5px solid var(--tertiary);
        box-shadow: 0px 0px 5px #ebedef;
