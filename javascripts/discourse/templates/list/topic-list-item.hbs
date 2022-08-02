@@ -8,7 +8,8 @@
 
 <div class='main-link clearfix topic-list-data'>
   <div class='category'>
-    {{category-link topic.category format="large"}}
+    {{!-- {{category-link topic.category format="large"}} --}}
+    {{topic.category.name}}
   </div>
   {{~raw-plugin-outlet name="topic-list-before-status"}}
   {{raw "topic-status" topic=topic}}
