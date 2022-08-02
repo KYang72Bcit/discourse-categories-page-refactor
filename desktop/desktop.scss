@@ -54,7 +54,7 @@
   }
   div.main-link {
     a.title {
-      font-weight: 700 !important;
+        font-weight: 700 !important;
       font-size: var(--font-up-1) !important;
       color: var(--header_primary) !important;
       display: block;
@@ -91,9 +91,7 @@
     font-size: 18px;
   }
   
-  .latest-topic-list-item a.title:not(.badge-notification):hover {
-    text-decoration: underline;
-  }
+ 
   
   .latest-topic-list-item .creator
    {
@@ -127,8 +125,13 @@
   
   .topic-list .topic-list-data {
     padding-bottom: 10px;
-    font-weight: 700 !important;
+    // font-weight: 700 !important;
     color: var(--tertiary);
+  }
+
+  div.main-link a.title:hover{
+    text-decoration: underline;
+
   }
   
   .topic-list .topic-list-header .topic-list-data {
