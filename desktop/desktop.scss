@@ -1,4 +1,4 @@
-.status-solved {
+span[title="This topic has a solution"] {
     position: relative;
     .d-icon-far-check-square {
       display: none !important;
@@ -6,7 +6,7 @@
   
   }
   
-  .status-solved::after {
+span[title="This topic has a solution"]::after {
     content: "\2713 \00a0 Solved";
     color: var(--blend-primary-secondary-5);
     font-size: var(--font-down-1);
