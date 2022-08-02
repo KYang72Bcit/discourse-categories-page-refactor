@@ -3,15 +3,13 @@
   <a href="{{topic.firstPostUrl}}" data-user-card="{{topic.creator.username}}">{{avatar topic.creator
     imageSize="large"}}</a>
 </div>
-<div class="main-link">
+<div class="main-post">
   <div class="top-row">
+    {{category-link topic.category}}
     {{raw "topic-status" topic=topic}}
-    {{topic-link topic}}
-   
+    {{topic-link topic}} 
   </div>
-  {{!-- <div class='category'>
-    {{category-link topic.category format="large"}}
-  </div> --}}
+
   {{raw "list/topic-excerpt" topic=topic}}
 </div>
 
