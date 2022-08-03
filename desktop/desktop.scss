@@ -30,7 +30,6 @@
     display: grid;
     grid-template-columns: 150px 150px auto 250px;
     align-items:center !important;
-    // margin-bottom: 1%;
     .createTime > a {
       color: var(--primary-medium) !important;
       text-align: center !important;
@@ -108,8 +107,6 @@
   
 
 .categories-grid {
-  // display: grid;
-  // grid-template-columns: calc(100% - 340px) 350px;
   display: flex;
 }
 
@@ -151,7 +148,7 @@
     }
   }
  
- @media screen and (max-width: 850px) {
+ @media screen and (max-width: 950px) {
   .categories-grid {
     display: block;
   }
