@@ -22,9 +22,12 @@
 //     top: 15px;
 //   }
 
+.categories-and-latest div.column{
+   width: auto;
+    max-width: 70% !important;
+}
 .latest-topic-list-item .main-link {
-    flex: 0 1 auto;
-    max-width: 75% !important;
+    max-width: 95% !important;
 }
   
   div.main-link > div.grid {
