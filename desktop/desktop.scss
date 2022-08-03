@@ -74,6 +74,11 @@
     color: var(--primary-medium) !important;
 }
   
+.latest-topic-list{
+  .table-heading{
+    display: none;
+  }
+}
 
   div.latest-topic-list-item:hover{
     outline: 1.5px solid var(--tertiary);
@@ -107,6 +112,7 @@
   // grid-template-columns: calc(100% - 340px) 350px;
   display: flex;
 }
+
   
   
  
@@ -146,10 +152,9 @@
   }
  
  @media screen and (max-width: 850px) {
-  // .categories-grid {
-  //   grid-template-columns: 100%;
-  //   grid-template-rows: auto auto;
-  // }
+  .categories-grid {
+    display: block;
+  }
     
   
  }
