@@ -77,23 +77,6 @@
     color: var(--primary-medium) !important;
 }
   
-//   .latest-topic-list .posts-map .main-link .like {
-//     font-size: var(--font-up-1);
-//     font-weight:normal;
-//     color: var(--primary-medium) !important;
-//     span.number {
-//         counter-reset: var(--primary-medium);
-//     }
-// }
-  // div.latest-topic-list-item {
-   
-  //   display: grid !important;
-  //   width: 95%;
-  //   grid-template-columns: 10% calc(90% - 10px);
-  //   grid-gap: 10px;
-    
-    
-  // }
 
   div.latest-topic-list-item:hover{
     outline: 1.5px solid var(--tertiary);
@@ -135,7 +118,8 @@
   
   @media screen and (max-width: 1150px) {
     .latest-topic-list-item span[title="This topic has a solution"]::after {
-      left: 400px;
+      right: 10px;
+      top: 15px;
     }
    
     div.main-link > div.grid {
@@ -172,11 +156,5 @@
   }
   }
   
-  @media screen and (max-width: 1150px) {
-    .latest-topic-list-item span[title="This topic has a solution"]::after {
-      right: 10px;
-      top: 15px;
-    }
-  
-  }
+
  
