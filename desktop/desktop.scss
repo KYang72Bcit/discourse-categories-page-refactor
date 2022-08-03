@@ -1,4 +1,4 @@
-div:has(.sloved) {
+.latest-topic-list-item .solved{
     position: relative;
     .d-icon-far-check-square {
       display: none !important;
@@ -6,7 +6,7 @@ div:has(.sloved) {
   
   }
   
-  div:has(.sloved)::after {
+  .latest-topic-list-item .solved {
     content: "\2713 \00a0 Solved";
     color: var(--blend-primary-secondary-5);
     font-size: var(--font-down-1);
