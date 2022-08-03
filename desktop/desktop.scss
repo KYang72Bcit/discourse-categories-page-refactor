@@ -63,9 +63,9 @@
     a.topic-excerpt {
         color: var(--primary-high);
     }
-    div.creator{
+    div.creator a{
         font-weight: 700;
-        color: var(--primary);
+        color: var(--primary) !important;
         
     }
   }
