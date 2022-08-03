@@ -104,7 +104,7 @@
 
 .categories-grid {
   display: grid;
-  grid-template-columns: auto 350px;
+  grid-template-columns: calc(100% - 340px) 350px;
 }
   
   
