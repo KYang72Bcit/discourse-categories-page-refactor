@@ -60,6 +60,14 @@
       color: var(--header_primary) !important;
       display: block;
     }
+    a.topic-excerpt {
+        color: var(--primary-high);
+    }
+    div.creator{
+        font-weight: 700;
+        color: var(--primary);
+        
+    }
   }
 
   div.latest-topic-list-item {
