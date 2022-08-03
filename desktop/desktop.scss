@@ -1,31 +1,31 @@
-// span[title="This topic has a solution"] {
-//     position: relative;
-//     .d-icon-far-check-square {
-//       display: none !important;
-//     }
+div:has(span[title="This topic has a solution"]) {
+    position: relative;
+    .d-icon-far-check-square {
+      display: none !important;
+    }
   
-//   }
+  }
   
-// span[title="This topic has a solution"]::after {
-//     content: "\2713 \00a0 Solved";
-//     color: var(--blend-primary-secondary-5);
-//     font-size: var(--font-down-1);
-//     font-weight: 700;
-//     background-color: var(--tertiary);
-//     border-radius: 5%;
-//     position: absolute;
-//     display: block;
-//     width: 70px;
-//     padding: 3px 6px;
-//     height: 20px;
-//     right: 10px;
-//     top: 15px;
-//   }
+div:has([title="This topic has a solution"])::after {
+    content: "\2713 \00a0 Solved";
+    color: var(--blend-primary-secondary-5);
+    font-size: var(--font-down-1);
+    font-weight: 700;
+    background-color: var(--tertiary);
+    border-radius: 5%;
+    position: absolute;
+    display: block;
+    width: 70px;
+    padding: 3px 6px;
+    height: 20px;
+    right: 10px;
+    top: 15px;
+  }
 
-// .categories-and-latest div.column{
-//    width: auto;
-//     max-width: 70% !important;
-// }
+.categories-and-latest div.column{
+   width: auto;
+    max-width: 70% !important;
+}
 .latest-topic-list-item .main-link {
     max-width: 95% !important;
 }
