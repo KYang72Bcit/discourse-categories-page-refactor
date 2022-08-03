@@ -1,4 +1,4 @@
-div:has(span[title="This topic has a solution"]) {
+div:has(.sloved) {
     position: relative;
     .d-icon-far-check-square {
       display: none !important;
