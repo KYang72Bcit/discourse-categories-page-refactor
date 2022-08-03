@@ -1,0 +1,12 @@
+<div class="column categories">
+  {{categories-only categories=categories}}
+</div>
+
+<div class="categories-grid">
+
+
+  {{categories-topic-list topics=topics filter="latest" class="latest-topic-list"}}
+
+
+  {{plugin-outlet name="extra-categories-column" connectorTagName="div"}}
+</div>
