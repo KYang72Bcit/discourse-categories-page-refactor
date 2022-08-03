@@ -1,5 +1,5 @@
 .latest-topic-list-item span[title="This topic has a solution"] {
-    position: relative;
+    position: static;
     .d-icon-far-check-square {
       display: none !important;
     }
@@ -19,7 +19,7 @@
     padding: 3px 6px;
     height: 20px;
     right: 50px;
-    top: -20px;
+    top: 15px;
   }
 .categories-and-latest div.column{
    width: auto;
@@ -95,9 +95,6 @@
     width: 100%;
   }
   
-  .latest-topic-list-item span[title="This topic has a solution"] {
-    position: static;
-  }
   
   div.latest-topic-list-item {
     display: grid !important;
