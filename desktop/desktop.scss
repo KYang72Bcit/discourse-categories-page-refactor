@@ -103,8 +103,9 @@
   
 
 .categories-grid {
-  display: grid;
-  grid-template-columns: calc(100% - 340px) 350px;
+  // display: grid;
+  // grid-template-columns: calc(100% - 340px) 350px;
+  display: flex;
 }
   
   
@@ -145,10 +146,10 @@
   }
  
  @media screen and (max-width: 850px) {
-  .categories-grid {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-  }
+  // .categories-grid {
+  //   grid-template-columns: 100%;
+  //   grid-template-rows: auto auto;
+  // }
     
   
  }
