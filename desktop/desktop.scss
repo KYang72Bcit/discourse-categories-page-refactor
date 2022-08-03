@@ -89,7 +89,8 @@
    
     display: grid !important;
     width: 95%;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 10% 88%;
+    grid-gap: 2%;
     // margin-left: 0%;
     
   }
@@ -144,3 +145,10 @@
       left: 400px;
     }
   }
+  @media screen and (max-width: 500px){
+    .categories-and-latest div.column{
+      width: auto;
+       max-width: 70% !important;
+   }
+  }
+ 
