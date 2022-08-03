@@ -19,7 +19,7 @@
     padding: 3px 6px;
     height: 20px;
     right: 50px;
-    top: 15px;
+    top: 13px;
   }
 .categories-and-latest div.column{
    width: auto;
@@ -116,7 +116,7 @@
   @media screen and (max-width: 1150px) {
     .latest-topic-list-item span[title="This topic has a solution"]::after {
       right: 10px;
-      top: 15px;
+     
     }
    
     div.main-link > div.grid {
