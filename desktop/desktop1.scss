@@ -1,4 +1,4 @@
-.status-solved {
+.latest-topic-list-item span[title="This topic has a solution"] {
     position: relative;
     .d-icon-far-check-square {
       display: none !important;
@@ -6,7 +6,7 @@
   
   }
   
-  .status-solved::after {
+  .latest-topic-list-item span[title="This topic has a solution"]::after {
     content: "\2713 \00a0 Solved";
     color: var(--blend-primary-secondary-5);
     font-size: var(--font-down-1);
@@ -18,7 +18,7 @@
     width: 70px;
     padding: 3px 6px;
     height: 20px;
-    right: 10px;
+    right: 200px;
     top: 15px;
   }
 .categories-and-latest div.column{
