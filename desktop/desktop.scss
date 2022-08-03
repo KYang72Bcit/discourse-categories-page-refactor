@@ -6,7 +6,7 @@ div:has(.sloved) {
   
   }
   
-div:has([title="This topic has a solution"])::after {
+  div:has(.sloved)::after {
     content: "\2713 \00a0 Solved";
     color: var(--blend-primary-secondary-5);
     font-size: var(--font-down-1);
