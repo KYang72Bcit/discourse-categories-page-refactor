@@ -1,12 +1,12 @@
-.latest-topic-list-item .solved{
+.status-solved {
     position: relative;
-    // .d-icon-far-check-square {
-    //   display: none !important;
-    // }
+    .d-icon-far-check-square {
+      display: none !important;
+    }
   
   }
   
-  .latest-topic-list-item .solved {
+  .status-solved::after {
     content: "\2713 \00a0 Solved";
     color: var(--blend-primary-secondary-5);
     font-size: var(--font-down-1);
@@ -18,10 +18,9 @@
     width: 70px;
     padding: 3px 6px;
     height: 20px;
-    left: 100px;
+    right: 10px;
     top: 15px;
   }
-
 .categories-and-latest div.column{
    width: auto;
     max-width: 70% !important;
