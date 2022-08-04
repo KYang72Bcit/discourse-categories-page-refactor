@@ -26,28 +26,30 @@
   
   }
   
+.creation-info {
+  > * {
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  .createTime{
+    font-size: var(--font-down-1) !important;
+  }
+  .creator{
+    font-size: var(--font-down-1) !important;
+  }
+}
 
-.createTime{
-  font-size: var(--font-down-1) !important;
-}
-.creator{
-  font-size: var(--font-down-1) !important;
-}
 .topic-excerpt {
   width: 96% !important;
   
 }
   
 div.main-link > div.grid {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    align-items:center !important;
+  display: flex;
+  justify-content: space-between;
     .createTime > a {
         color: var(--primary-medium) !important;
         text-align: center !important;
-       
-    
       }
       .d-icon {
         color: var(--tertiary) !important;
@@ -55,24 +57,22 @@ div.main-link > div.grid {
     div.like {
     font-size: var(--font-down-1) !important;
     font-weight: 500 !important;
-     grid-row-start: 2; 
-     grid-column: 1/-1;
-     display: grid;
-     grid-template-columns: repeat(3, 33.3%);
-     align-items: center;
-     .likes {
-      grid-column-start: 1;
+     display: flex;
+    //  grid-template-columns: repeat(3, 33.3%);
+    //  align-items: center;
+    //  .likes {
+    //   grid-column-start: 1;
 
-     }
-     .views {
-      grid-column-start: 2;
-     }
-     .posts {
-      grid-column-start: 3;
-      font-size: var(--font-down-1) !important;
-      font-weight: 500 !important;
+    //  }
+    //  .views {
+    //   grid-column-start: 2;
+    //  }
+    //  .posts {
+    //   grid-column-start: 3;
+    //   font-size: var(--font-down-1) !important;
+    //   font-weight: 500 !important;
       
-     }
+    //  }
    
     }
     

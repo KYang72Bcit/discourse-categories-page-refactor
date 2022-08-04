@@ -1,166 +1,150 @@
 .latest-topic-list-item span[title="This topic has a solution"] {
-    position: static;
-    .d-icon-far-check-square {
-      display: none !important;
-    }
-  
+  position: static;
+  .d-icon-far-check-square {
+    display: none !important;
   }
-  
-  .latest-topic-list-item span[title="This topic has a solution"]::after {
-    content: "\2713 \00a0 Solved";
-    color: var(--blend-primary-secondary-5);
-    font-size: var(--font-down-1);
-    font-weight: 700;
-    background-color: var(--tertiary);
-    border-radius: 5%;
-    position: absolute;
-    display: block;
-    width: 70px;
-    padding: 3px 6px;
-    height: 20px;
-    right: 50px;
-    top: 13px;
+  .d-icon {
+    margin-right: 0.3rem;
   }
 
+  .d-icon.d-icon-calendar-alt {
+    margin-right: 0;
+  }
+}
+
+.latest-topic-list-item span[title="This topic has a solution"]::after {
+  content: "\2713 \00a0 Solved";
+  color: var(--blend-primary-secondary-5);
+  font-size: var(--font-down-1);
+  font-weight: 700;
+  background-color: var(--tertiary);
+  border-radius: 5%;
+  position: absolute;
+  display: block;
+  width: 70px;
+  padding: 3px 6px;
+  height: 20px;
+  right: 50px;
+  top: 13px;
+}
+
 .latest-topic-list-item .main-link {
-    max-width: 95% !important;
+  max-width: 95% !important;
+  line-height: 1.71428571;
 }
-  
-  div.main-link > div.grid {
-    display: grid;
-    grid-template-columns: 150px 150px auto 250px;
-    align-items:center !important;
-    .createTime > a {
-      color: var(--primary-medium) !important;
-      text-align: center !important;
-      font-size: var(--font-0-rem);
-  
+
+div.main-link > div.grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  .creation-info {
+    > * {
+      margin-bottom: 15px;
+      margin-right: 10px;
     }
-    .d-icon {
-      color: var(--tertiary) !important;
+    .createTime {
+      font-size: var(--font-down-1) !important;
     }
-    div.like {
-      grid-column-start: 4;
-      
-      margin: 2%;
-      
-      display: grid;
-      grid-template-columns: repeat(3, 33.3%);
-      align-items: center;
-      
-    } 
-  
-  }
-  .latest-topic-list-item div.main-link {
-    a.title {
-        font-weight: 700 !important;
-      font-size: var(--font-up-1) !important;
-      color: var(--header_primary) !important;
-      display: block;
-    }
-    a.topic-excerpt {
-        color: var(--primary-high);
-    }
-    div.creator a{
-        font-weight: 700;
-        color: var(--primary) !important;
-        
+    .creator {
+      font-size: var(--font-down-1) !important;
     }
   }
-  .latest-topic-list .posts-map, .top-topic-list .posts-map{
-    font-size: var(--font-0);
-    font-weight: normal;
+  .createTime > a {
     color: var(--primary-medium) !important;
+    text-align: center !important;
+    font-size: var(--font-0-rem);
+  }
+  .d-icon {
+    color: var(--tertiary) !important;
+  }
+  div.like {
+    grid-column-start: 4;
+
+    margin: 2%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    align-items: center;
+  }
 }
-  
-.latest-topic-list{
-  .table-heading{
+.latest-topic-list-item div.main-link {
+  a.title {
+    font-weight: 700 !important;
+    font-size: var(--font-up-1) !important;
+    color: var(--header_primary) !important;
+    display: block;
+  }
+  a.topic-excerpt {
+    color: var(--primary-high);
+    font-size: 14px;
+  }
+  div.creator a {
+    font-weight: 700;
+    color: var(--primary) !important;
+  }
+}
+.latest-topic-list .posts-map,
+.top-topic-list .posts-map {
+  font-size: var(--font-0);
+  font-weight: normal;
+  color: var(--primary-medium) !important;
+}
+
+.latest-topic-list {
+  .table-heading {
     display: none;
   }
 }
 
-  div.latest-topic-list-item:hover{
-    outline: 1.5px solid var(--tertiary);
-    box-shadow: 0px 0px 5px #ebedef;
+div.latest-topic-list-item:hover {
+  outline: 1.5px solid var(--tertiary);
+  box-shadow: 0px 0px 5px #ebedef;
 }
-  
- 
-  .poster-avatar {
-    justify-self: center;
-    align-self: self-start;
-    padding-top: 20px;
-  }
 
-  .categories-and-latest, .categories-and-top {
-    display: block;
-    width: 100%;
+.poster-avatar {
+  justify-self: center;
+  align-self: self-start;
+}
+
+.categories-and-latest,
+.categories-and-top {
+  display: block;
+  width: 100%;
+}
+
+div.latest-topic-list-item {
+  display: grid !important;
+  width: 95%;
+  grid-template-columns: max-content 90%;
+  grid-gap: 10px;
+  position: relative;
+  .poster-avatar {
+    padding: 0;
   }
-  
-  
-  div.latest-topic-list-item {
-    display: grid !important;
-    width: 95%;
-    grid-template-columns: 10%calc(90% - 10px);
-    grid-gap: 10px;
-    position: relative;
-  }
-  
+}
+
+.main-link a.title {
+  padding: 8px 0;
+}
 
 .categories-grid {
   display: flex;
 }
 
-  
-  
- 
-  
-
-  
-  @media screen and (max-width: 1150px) {
-    .latest-topic-list-item span[title="This topic has a solution"]::after {
-      right: 10px;
-     
-    }
-   
-    div.main-link > div.grid {
-      display: grid;
-      grid-template-rows: 50% 50%;
-      grid-template-columns: 50% 50%;
-      align-items:center !important;
-      div.like {
-       grid-row-start: 2; 
-       grid-column: 1/-1;
-       .likes {
-        grid-column-start: 1;
-  
-       }
-       .views {
-        display: inline-block !important;
-        grid-column-start: 2;
-  
-       }
-       .posts {
-        grid-column-start: 3;
-       }
-     
-      }
-      
-    }
+@media screen and (max-width: 1150px) {
+  .latest-topic-list-item span[title="This topic has a solution"]::after {
+    right: 10px;
   }
- 
- @media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 950px) {
   .categories-grid {
     display: block;
   }
-    
-  
- }
-  @media screen and (max-width: 500px) {
-    .categories-and-latest div.column {
-      width: 100%;
-      max-width: 100% !important;
+}
+@media screen and (max-width: 500px) {
+  .categories-and-latest div.column {
+    width: 100%;
+    max-width: 100% !important;
   }
-  }
-  
-
- 
+}

@@ -14,14 +14,16 @@
       {{topic-featured-link this.topic}}
     {{/if}}
   {{raw "list/topic-excerpt" topic=topic}}
-  <div class='post details grid'>
-    <div class="creator"> <span>By</span>
-      <a href="/users/{{topic.creator.username}}"
-        data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
-      </a>
-    </div>
-     <div class="createTime">
-    <a href={{topic.lastPostUrl}} title={{topic.bumpedAtTitle}}>{{d-icon "calendar-alt"}} {{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
+  <div class="post details grid">
+    <div class="creation-info">
+      <div class="creator"> <span>By</span>
+        <a href="/users/{{topic.creator.username}}"
+          data-user-card="{{topic.creator.username}}"> {{topic.creator.username}}
+        </a>
+      </div>
+       <div class="createTime">
+      <a href={{topic.lastPostUrl}} title={{topic.bumpedAtTitle}}>{{d-icon "calendar-alt"}} {{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
+      </div>
     </div>
    <div class="like view reply">
       <div class="num likes topic-list-data">
