@@ -81,6 +81,7 @@ div.main-link > div.grid {
     font-size: var(--font-up-1) !important;
     color: var(--header_primary) !important;
     display: block;
+    padding: 8px 0 !important;
   }
   a.topic-excerpt {
     color: var(--primary-high);
@@ -121,15 +122,10 @@ div.latest-topic-list-item:hover {
 }
 
 div.latest-topic-list-item {
-  width: 95%;
-  position: relative;
+  gap: 10px;
   .poster-avatar {
     padding: 0;
   }
-}
-
-.main-link a.title {
-  padding: 8px 0;
 }
 
 .categories-grid {
