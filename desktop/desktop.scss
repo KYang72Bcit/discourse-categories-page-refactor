@@ -132,6 +132,9 @@ div.latest-topic-list-item {
   display: flex;
   gap: 2em;
 }
+.muted-categories {
+  display: none;
+}
 
 @media screen and (max-width: 1150px) {
   .latest-topic-list-item span[title="This topic has a solution"]::after {
