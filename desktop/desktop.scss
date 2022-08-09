@@ -73,6 +73,10 @@ div.main-link > div.grid {
 }
 .latest-topic-list-item div.main-link {
   line-height: 1.71428571;
+  position: relative;
+    align-items: center;
+    display: grid;
+    grid-template-columns: max-content auto;
   .category {
     line-height: normal;
   }
