@@ -61,6 +61,7 @@ div.main-link > div.grid {
   div.like {
     display: flex;
     align-items: center;
+    gap: 1rem;
   }
   .num.posts-map.topic-list-data {
     span {
@@ -86,7 +87,6 @@ div.main-link > div.grid {
   .topic-list-data > a, .topic-list-data {
     display: flex;
     align-items: center;
-    gap: 1rem;
   }
   .topic-list-data span {
     color: var(--primary-medium);
