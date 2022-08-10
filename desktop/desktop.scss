@@ -83,6 +83,10 @@ div.main-link > div.grid {
     display: block;
     padding: 8px 0 !important;
   }
+  .topic-list-data > a, .topic-list-data {
+    display: flex;
+    align-items: center;
+  }
   a.topic-excerpt {
     color: var(--primary-high);
     font-size: 14px;
@@ -139,10 +143,6 @@ div.latest-topic-list-item {
 }
 .muted-categories {
   display: none;
-}
-
-.topic-list-data > a, .topic-list-data {
-  display: flex;
 }
 
 @media screen and (max-width: 1150px) {
