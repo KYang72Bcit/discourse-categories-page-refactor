@@ -89,7 +89,7 @@ div.main-link > div.grid {
     align-items: center;
   }
   .topic-list-data span {
-    color: var(--primary-medium);
+    color: var(--primary-medium) !important;
   }
   a.topic-excerpt {
     color: var(--primary-high);
