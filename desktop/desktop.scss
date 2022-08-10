@@ -88,6 +88,9 @@ div.main-link > div.grid {
     align-items: center;
     gap: 1rem;
   }
+  .topic-list-data span {
+    color: var(--primary-medium);
+  }
   a.topic-excerpt {
     color: var(--primary-high);
     font-size: 14px;
